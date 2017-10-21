@@ -2,6 +2,8 @@ import TYPES from './model/types';
 import storage from './model/storage';
 import dispatch from './controller/dispatch';
 
+import './view/css/red-text.css';
+
 function test(data) {
     document.body.innerHTML += `<br>${data}`;
 }
@@ -14,4 +16,4 @@ function createProfile(name) {
 
 createProfile('Timmi');
 createProfile('Shrek');
-createProfile('Petya');
+createProfile('Vlad');
