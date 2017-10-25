@@ -7,8 +7,8 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: {
-        client: './app/client.js',
-        server: './app/server.js'
+        client: './app/client/client.js',
+        server: './app/server/server.js'
     },
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -41,9 +41,9 @@ module.exports = {
         new CleanWebpackPlugin(['build']),
         new HtmlWebpackPlugin({
             title: 'Arena',
-            template: 'app/view/index.ejs',
-            excludeChunks: ['server'],
-            favicon: 'app/view/images/favicon.ico'
+            template: 'app/client/view/index.ejs',
+            excludeChunks: ['client'],
+            favicon: 'app/client/view/images/favicon.ico'
         }),
         new ExtractTextPlugin('styles.css')
     ]
