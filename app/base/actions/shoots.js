@@ -12,7 +12,7 @@ export const addShoot = (shoot) => {
 
 export const deleteShoot = (id) => {
 	return {
-		type: ADD_SHOOT,
+		type: DELETE_SHOOT,
 		id
 	}
 };

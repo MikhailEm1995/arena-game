@@ -12,7 +12,7 @@ export const addObstacle = (obstacle) => {
 
 export const deleteObstacle = (id) => {
 	return {
-		type: ADD_OBSTACLE,
+		type: DELETE_OBSTACLE,
 		id
 	}
 };

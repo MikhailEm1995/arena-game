@@ -12,7 +12,7 @@ export const addPlayer = (player) => {
 
 export const deletePlayer = (id) => {
 	return {
-		type: ADD_PLAYER,
+		type: DELETE_PLAYER,
 		id
 	}
 };

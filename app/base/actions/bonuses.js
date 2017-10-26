@@ -12,7 +12,7 @@ export const addBonus = (bonus) => {
 
 export const deleteBonus = (id) => {
 	return {
-		type: ADD_BONUS,
+		type: DELETE_BONUS,
 		id
 	}
 };

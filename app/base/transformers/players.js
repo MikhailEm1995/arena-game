@@ -9,7 +9,7 @@ const transformPlayers = (box, action) => {
 			return box.concat([action.player]);
 		}
 		case DELETE_PLAYER: {
-			return box.filter((item, i) => !i === action.id);
+			return box.filter((item, i) => i !== action.id);
 		}
 		default: {
 			return box;
